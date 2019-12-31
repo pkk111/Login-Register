@@ -113,13 +113,12 @@ class App extends ValidationComponent {
             secureTextEntry={true}
             placeholder="Password"
           />
-          <Text
+          <TouchableOpacity
             style={styles.switcher}
             onPress={this.register}
-            activeOpacity={0.5}
-            suppressHighlighting={false}>
-            Register
-          </Text>
+            activeOpacity={0.5}>
+            <Text style={styles.switcherText}>Register</Text>
+          </TouchableOpacity>
           <TouchableOpacity onPress={this.login}>
             <View style={styles.click}>
               <Text style={styles.buttonText}>Sign in</Text>
@@ -160,13 +159,12 @@ class App extends ValidationComponent {
           secureTextEntry={true}
           placeholder="Password"
         />
-        <Text
+        <TouchableOpacity
           style={styles.switcher}
           onPress={this.register}
-          activeOpacity={0.5}
-          suppressHighlighting={false}>
-          Sign In
-        </Text>
+          activeOpacity={0.5}>
+          <Text style={styles.switcherText}>Sign In</Text>
+        </TouchableOpacity>
         <TouchableOpacity onPress={this.signin}>
           <View style={styles.click}>
             <Text style={styles.buttonText}>Register</Text>
@@ -211,9 +209,11 @@ const styles = StyleSheet.create({
   switcher: {
     marginHorizontal: 40,
     alignSelf: 'flex-end',
-    fontSize: 18,
+  },
+  switcherText: {
+    fontSize: 20,
     fontStyle: 'italic',
-    fontFamily: 'Roboto',
+    fontFamily: 'monospace',
     textDecorationLine: 'underline',
   },
 });
