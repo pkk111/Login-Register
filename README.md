@@ -12,7 +12,7 @@ After that open terminal where you want to download the app and run the followin
 ## Running app on Mobile
  
  To run the app on android
-  * Run `rect-native start` in one terminal and `react-native run-android` in another
+  * Run `react-native start` in one terminal and `react-native run-android` in another
   
  To run the app on IOS
-  * Run `rect-native start' in one terminal and `react-native run-ios` in another
+  * Run `react-native start` in one terminal and `react-native run-ios` in another
